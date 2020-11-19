@@ -6,3 +6,5 @@ ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width)) +
 
 mod <- lm(Sepal.Length ~ Sepal.Width + Petal.Length, iris)
 summary(mod)
+
+jarque.bera.test(mod) # I don't remember in what package this function is 
